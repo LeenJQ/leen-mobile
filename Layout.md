@@ -7,9 +7,11 @@
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no">
 ```
-然后根据手机屏幕宽度计算全局font-size，这个size能让我们用 1rem = 100px 的比例写css里的大小
+然后在js代码里面写入下面代码
 
-***750是UI设计图的宽度，这里如果不一样需要替换***
+> 这个代码会根据手机屏幕宽度计算全局font-size，这个size能让我们用 1rem = 100px 的比例写css里的大小
+
+> ***750是UI设计图的宽度，这里如果不一样需要替换***
 
 ```javascript
 (function (doc, win) {
