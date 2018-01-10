@@ -2,7 +2,7 @@
 ___
 
 ## 主流测试浏览器（中国）
-![桌面](./img/PC_comp.png)
+![桌面](./img/PC_comp.png =100x20)
 ![移动端](./img/mobile_comp.png)
 
 ## 常见问题解决方案
