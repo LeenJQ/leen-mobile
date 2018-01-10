@@ -2,8 +2,8 @@
 ___
 
 ## 2018年1月截止主流测试浏览器（中国）
-IOS 8+
-Android 6+
+> IOS 8+ 
+ Android 6+
 
 ![移动端](./img/mobile_comp.png)
 
