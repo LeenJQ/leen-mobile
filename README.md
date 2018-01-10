@@ -6,7 +6,7 @@
 
 * [手势 (touch)](./touch.md)
 
-* 调试
+* [调试](./Debug.md)
 
 * 性能
 
@@ -18,7 +18,7 @@
 
 * Hybird
 
-* React Native
+* React Native
 
 * Weex & 小程序
 
