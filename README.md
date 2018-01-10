@@ -1,6 +1,6 @@
-移动端开发总结
+#移动端开发总结
 
-# 自适应
+* [兼容性](./Compatibility.md)
 
 # 布局
 
@@ -11,3 +11,8 @@
 # 性能
 
 # 动画
+
+#参考链接
+
+* https://github.com/doyoe/trip
+* 
