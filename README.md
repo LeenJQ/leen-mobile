@@ -2,7 +2,9 @@
 
 * [兼容性](./Compatibility.md)
 
-# 布局
+* [布局](./Layout.md)
+
+* [手势 (touch)](./touch.md)
 
 # DOM 操作
 

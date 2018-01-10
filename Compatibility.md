@@ -3,7 +3,7 @@ ___
 
 ## 2018年1月截止主流测试浏览器（中国）
 > IOS 8+ 
- Android 6+
+ Android 5+
 
 ![移动端](./img/mobile_comp.png)
 
@@ -28,6 +28,3 @@ textarea {
 }
 ```
 
-# 参考链接
-
-* https://github.com/doyoe/trip
