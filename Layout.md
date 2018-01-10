@@ -31,11 +31,12 @@
   doc.addEventListener('DOMContentLoaded', recalc, false);
 })(document, window);  
 ```
+这样就可以在 css 里方便的计算 rem 了
 
 ```css
 input {
   width: 100%;
-  height: 1.3rem; /* 相当于设计图上的130px */
+  height: 1.3rem; /* 1rem = 100px */
   font-size: 0.32rem;
 }
 ```
