@@ -1,4 +1,4 @@
-#移动端开发总结
+# 移动端开发总结
 
 * [兼容性](./Compatibility.md)
 
@@ -12,7 +12,3 @@
 
 # 动画
 
-#参考链接
-
-* https://github.com/doyoe/trip
-* 
