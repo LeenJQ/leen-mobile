@@ -1,4 +1,6 @@
-# 手机浏览器信息
+# 系统信息
+
+## 手机浏览器信息
 
 ```javascript
 // 是否为浏览器
@@ -19,5 +21,7 @@ export const isAndroid = (UA && UA.indexOf('android') > 0) || (weexPlatform === 
 export const isIOS = (UA && /iphone|ipad|ipod|ios/.test(UA)) || (weexPlatform === 'ios')
 // 是否为Chrome
 export const isChrome = UA && /chrome\/\d+/.test(UA) && !isEdge
-
 ```
+
+## 手机浏览器信息
+

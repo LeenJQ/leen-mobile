@@ -27,4 +27,6 @@ textarea {
 	appearance: none;
 }
 ```
+### retina 屏幕 border:1px 问题
+
 
