@@ -8,6 +8,8 @@
 
 * [调试](./Debug.md)
 
+* [用户信息(user angent)](./userAgent.md)
+
 * 性能
 
 * 动画
@@ -16,9 +18,21 @@
 
 * 服务端渲染
 
+* 历史记录（history)
+
+* 缓存
+
 * Hybird
 
+* PWA
+
 * React Native
+
+* 微信
+
+* 扫码
+
+* 支付
 
 * Weex & 小程序
 

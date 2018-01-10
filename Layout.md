@@ -40,3 +40,18 @@ input {
   font-size: 0.32rem;
 }
 ```
+
+### 旧的方案
+
+***不推荐***, 使用 sass 编写函数 px2rem, 然后每次调用 px2rem 转换
+
+```scss
+$designWidth: 750; 
+@function px2rem( $px ){
+	@return $px*320/$designWidth/20 + rem;
+}
+
+#header{
+	width: px2rem(640);
+}
+```
