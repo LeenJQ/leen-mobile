@@ -2,7 +2,7 @@
 
 ## rem 布局
 
-现在 header 里定义 meta-view 让页面不可缩放
+先在 header 里定义 meta-view 让页面不可缩放
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no">
