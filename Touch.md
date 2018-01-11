@@ -2,6 +2,10 @@
 
 <img src="./img/touch_type.png" width="400">
 
+[基础原理](./Basic.md#touch)
+
+## 滑动
+
 ## 常见问题
 
 ### 替换click 300ms 延迟

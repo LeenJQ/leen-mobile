@@ -93,5 +93,49 @@ document.documentElement.clientHeight
   * screenX/Y
     ><img src="./img/desktop_screenXY.jpg" width="300">  
 
+<a href="#touch">
+
+## 触摸（touch）
+
+<img src="./img/touch_type.png" width="400">
+
+### 触摸事件
+
+  * touchstart
+  * touchmove
+  * touchend
+  * touchcancel
+
+### 触摸跟踪属性
+  * touches: 当前跟踪的触摸操作的Touch对象的数组
+  * targetTouchs: 特定于事件目标的Touch对象的数组
+  * changeTouches: 表示自上次触摸以来发生了什么改变的Touch对象数组
+
+### Touch对象属性
+
+```js
+{
+  clientX
+  clientY
+  identifier // 标识触摸的唯一 ID
+  pageX
+  pageY
+  screenX
+  screenY
+  target     // 触摸的DOM 节点目标
+}
+```
+
+### 触摸事件顺序
+
+ 1. touchstart
+ 2. mouseover
+ 3. mousemove (一次)
+ 4. mousedown
+ 5. mouseup
+ 6. click
+ 7. touchend
+
+
 ## 参考链接
   * http://weizhifeng.net/viewports.html
