@@ -1,10 +1,18 @@
 # 基础原理
 
-# rem & dpr
+## 像素单位
 
-* **物理像素**: 显示器最小显示单元
+* **像素**
+<img src="./img/pixel.png" height="150">
+
+* **物理像素**
+
+显示器最小显示单元
 <img src="./img/device_pixel.png" height="200">
-* **设备独立像素**：如css中的px单元，计算机坐标中的一个点，这个点计算后转换成物理像素的点
+
+* **设备独立像素**
+
+如css中的px单元，计算机坐标中的一个点，这个点计算后转换成物理像素的点
 
 * **设备像素比(DPR-device pixel ratio)** = 物理像素 / 设备像素
 
@@ -13,8 +21,12 @@
 ```javascript
 var dpr = window.devicePixelRatio
 ```
+<a href="#view-unit" />
 
 * **视口单位（ Viewport units )**
+vw, vh, vmin, vmax
+
+## 尺寸
 
 * **屏幕尺寸**
   >意义：用户屏幕的整体大小。
@@ -46,7 +58,9 @@ window.pageYOffset
 ```
 <img src="./img/desktop_page3.jpg" width="300">
 
-* **视口(viewport)**: 浏览器内容区域，**不包含工具条，滚动条**
+* **视口(viewport)**
+
+浏览器内容区域 **不包含工具条，滚动条**
 
 ```html
 <!-- 例子  -->

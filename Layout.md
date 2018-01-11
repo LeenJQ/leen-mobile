@@ -1,5 +1,13 @@
 # 布局
 
+## 常见手机屏幕宽度
+手机屏幕范围一般取 320px ~ 750px, 大于这个范围一般默认为PC
+
+* iphone4 : 320px
+* iphone6 : 375px
+
+> UI 设计图宽度一般为 640px,750px
+
 ## rem 布局
 
 [参考连接](https://segmentfault.com/a/1190000007526917)
@@ -13,6 +21,8 @@
 然后在js代码里面写入下面代码
 
 > 这个代码会根据手机屏幕宽度计算全局font-size，这个size能让我们用 1rem = 100px 的比例写css里的大小
+
+> 之所以用100倍的大小，一是计算方便，二是因为html设置为1px，那么通过计算会得0.xx 这样的数，有些手机会当作0px
 
 > ***750是UI设计图的宽度，这里如果不一样需要替换***
 
@@ -72,14 +82,62 @@ $designWidth: 750;
 #header{
 	width: px2rem(640);
 }
+
+/* 针对dpr=2 的情况字体大小做特殊处理做到精确匹配设计稿 */
+font-size: 16px; 
+[data-dpr="2"] input { 
+    font-size: 32px; 
+} 
+
+/* 通用转换代码，LESS */
+.px2px(@name, @px){ 
+    @{name}: round(@px / 2) * 1px; 
+    [data-dpr="2"] & { 
+        @{name}: @px * 1px; 
+    } 
+    // for mx3 
+    [data-dpr="2.5"] & { 
+        @{name}: round(@px * 2.5 / 2) * 1px; 
+    } 
+    // for 小米note 
+    [data-dpr="2.75"] & { 
+        @{name}: round(@px * 2.75 / 2) * 1px; 
+    } 
+    [data-dpr="3"] & { 
+        @{name}: round(@px / 2 * 3) * 1px 
+    } 
+    // for 三星note4 
+    [data-dpr="4"] & { 
+        @{name}: @px * 2px; 
+    } 
+} 
+
+.px2px(font-size, 32);
 ```
 
-## vw 布局
+## vw/vh 布局
+
+### 参考文章
+[再聊移动端页面的适配](https://www.w3cplus.com/css/vw-for-layout.html)
+
+[基础原理](./Basic.md#view-unit)
 
 ### 浏览器支持
-<img src="./img/vw_vh_vmax.png" width="400">
+<img src="./img/compaty_vw.png" width="400">
 
 >支持 Android 4.4+, IOS8+ 
- 
+
 >可以使用[兼容库](http://joaocunha.github.io/vunit/)支持其他系统（ie,opera)
 
+1vw 对应屏幕宽度的 1%
+
+## 弹性布局
+<img src="./img/flex_layout_1.png" width="500">
+
+* 顶部与底部的bar不管分辨率怎么变，它的高度和位置都不变
+* 中间每条招聘信息不管分辨率怎么变，招聘公司的图标等信息都位于条目的左边，薪资都位于右边
+
+<img src="./img/flex_layout_2.png" width="500">
+
+## 参考连接:
+ * [从网易与淘宝的font-size思考前端设计稿与工作流](http://www.cnblogs.com/lyzg/p/4877277.html)

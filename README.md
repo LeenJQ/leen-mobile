@@ -6,7 +6,7 @@
 
 * [布局](./Layout.md)
 
-* [手势 (touch)](./touch.md)
+* [手势 (touch)](./Touch.md)
 
 * [调试](./Debug.md)
 
