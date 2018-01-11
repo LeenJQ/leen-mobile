@@ -93,7 +93,7 @@ document.documentElement.clientHeight
   * screenX/Y
     ><img src="./img/desktop_screenXY.jpg" width="300">  
 
-<a href="#touch">
+<a name="touch" id="touch"></a>
 
 ## 触摸（touch）
 
