@@ -46,7 +46,11 @@ input {
 
 ### 方案2：dpr 设置缩放比
 
-[淘宝方案参考链接](https://github.com/amfe/lib-flexible/blob/2.0/index.js)
+[淘宝方案库: lib-flexible](https://github.com/amfe/lib-flexible/blob/2.0/index.js)
+
+[原理说明](https://github.com/amfe/article/issues/17)
+
+> 源代码里通过计算 0.5px 元素来兼容 [retina border 1px 问题](./Compatibility.md#retina-border-1px)
 
 ```javascript
 // 获取 dpr
@@ -59,10 +63,6 @@ var scale = 1 / devicePixelRatio;
  document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px'；
 ```
 
-### 旧的方案
-
-***不推荐***, 使用 sass 编写函数 px2rem, 然后每次调用 px2rem 转换
-
 ```scss
 $designWidth: 750; 
 @function px2rem( $px ){
@@ -73,3 +73,13 @@ $designWidth: 750;
 	width: px2rem(640);
 }
 ```
+
+## vw 布局
+
+### 浏览器支持
+<img src="./img/vw_vh_vmax.png" width="400">
+
+>支持 Android 4.4+, IOS8+ 
+ 
+>可以使用[兼容库](http://joaocunha.github.io/vunit/)支持其他系统（ie,opera)
+

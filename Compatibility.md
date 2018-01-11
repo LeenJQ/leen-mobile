@@ -27,6 +27,43 @@ textarea {
 	appearance: none;
 }
 ```
+
+<a href="retina-border-1px">
+
 ### retina 屏幕 border:1px 问题
 
+[问题说明](http://mobile.51cto.com/web-484304.htm)
 
+主要是分辨率高的屏幕下 1px的线会变得粗一点
+
+[解决方案](https://www.jianshu.com/p/7e63f5a32636)
+
+
+推荐: 
+* viewport + rem 实现(淘宝方案)
+* 伪类 + transform 实现
+
+```css
+.scale-1px{
+  position: relative;
+  border:none;
+}
+.scale-1px:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: #000;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+```
+
+```javascript
+if(window.devicePixelRatio && devicePixelRatio >= 2){
+  document.querySelector('ul').className = 'scale-1px';
+}
+```

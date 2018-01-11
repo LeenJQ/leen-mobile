@@ -14,14 +14,70 @@
 var dpr = window.devicePixelRatio
 ```
 
-* **视口(viewport)**: 浏览器内容区域，不包含工具条，滚动条
+* **视口单位（ Viewport units )**
+
+* **屏幕尺寸**
+  >意义：用户屏幕的整体大小。
+   度量单位：设备像素。
+```javascript
+screen.width
+screen.height
+```
+
+<img src="./img/desktop_screen.jpg" width="300">
+
+
+* **窗口尺寸**
+  > 意义：浏览器窗口的整体大小，**包括滚动条**。
+  度量单位：CSS像素。
+```javascript
+window.innerWidth
+window.innerHeight
+```
+<img src="./img/desktop_inner.jpg" width="300">
+
+
+* **滚动距离**
+  > 意义：页面滚动的距离。
+   度量单位：CSS像素。
+```javascript
+window.pageXOffset
+window.pageYOffset
+```
+<img src="./img/desktop_page3.jpg" width="300">
+
+* **视口(viewport)**: 浏览器内容区域，**不包含工具条，滚动条**
 
 ```html
-<!-- html里的视口定义  -->
+<!-- 例子  -->
 <metaname="viewport"content=“width=device-width,minimum-scale=1.0,maximum-scale=1.0”/>
 ```
 
 ```javascript
-// 获取视口
-var viewPortWidth = document.documentElement.clientWidth
+document.documentElement.clientWidth
+document.documentElement.clientHeight
 ```
+<img src="./img/desktop_client_smallpage.jpg" width="300">
+
+>1.**view port 与html 大小无关**
+>2. **document.documentElement.clientWidth和-Height并不包含滚动条，但是window.innerWidth/Height包含**
+
+* **页面尺寸**
+  >意义：<html>元素（也就是页面）的尺寸。
+  度量单位：CSS像素。
+
+<img src="./img/desktop_client_smallpage.jpg" width="300">
+<img src="./img/desktop_offset_smallpage.jpg" width="300">
+
+* **事件中的坐标**
+  * pageX/Y
+    ><img src="./img/desktop_pageXY.jpg" width="300">
+    
+  * clientX/Y
+    ><img src="./img/desktop_clientXY.jpg" width="300">
+    
+  * screenX/Y
+    ><img src="./img/desktop_screenXY.jpg" width="300">  
+
+## 参考链接
+  * http://weizhifeng.net/viewports.html
