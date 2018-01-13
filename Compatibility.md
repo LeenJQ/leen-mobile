@@ -1,4 +1,4 @@
-# 兼容性
+# 兼容性与奇怪问题
 ___
 
 ## 2018年1月截止主流测试
@@ -14,6 +14,13 @@ ___
 
 
 ## 常见问题解决方案
+
+### e.preventDefault 报异常 
+
+Chrome 更新 addEventListener 第三个参数，以前只有 true|false, 现在还可以传对象, 如果项目中报错（如滚动，touch 拖动时候），很有可能跟第三个参数 {passive} 有关
+
+[详细](https://zhuanlan.zhihu.com/p/24385322)
+
 
 ### 移动端 body, overflow: hidden 禁止滚动失效
 

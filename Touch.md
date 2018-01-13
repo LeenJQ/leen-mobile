@@ -1,14 +1,14 @@
-# 手势
+# 触摸 & 手势
 
 <img src="./img/touch_type.png" width="400">
 
-[基础原理](./Basic.md#touch)
-
-## 滑动
+## [基础原理](./Basic.md#touch)
 
 ## 常见问题
 
 ### 替换click 300ms 延迟
+
+> 移动端click 为了判断是单击还是其他操作，延迟了click 300ms，可以使用如下方案加快响应
 
 #### 使用 fastclick 库
 https://github.com/ftlabs/fastclick
@@ -32,3 +32,7 @@ document.addEventListener('touchend',function (event) {
   lastTouchEnd=now;  
 },false)  
 ```
+
+## 库
+ * [toucher](https://github.com/bh-lay/toucher/blob/master/asset/toucher.js)
+ * [fastclick](https://github.com/ftlabs/fastclick)

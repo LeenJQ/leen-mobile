@@ -141,6 +141,16 @@ document.documentElement.clientHeight
  6. click
  7. touchend
 
+### 手势事件
+> 当两个手指触摸屏幕时就会产生手势
+  * gesturestart: 当一个手指已经按在屏幕上而另一个手指又触摸时触发
+  * gesturechange: 当触摸屏幕的任何一个手指的位置发生变化时触发
+  * gestureend: 当任何一个手指从屏幕上面移开时触发
+
+#### 额外属性
+  * rotation
+  * scale
 
 ## 参考链接
   * http://weizhifeng.net/viewports.html
+  * 《javascript 高级程序设计（第三版）》
