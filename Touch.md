@@ -4,6 +4,11 @@
 
 ## [基础原理](./Basic.md#touch)
 
+### leen-helper
+个人封装的 ES6 移动端手势库
+
+[github](https://github.com/LeenJQ/leen-toucher)
+
 ## 常见问题
 
 ### 替换click 300ms 延迟
