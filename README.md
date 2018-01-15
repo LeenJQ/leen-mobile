@@ -18,6 +18,8 @@
 
 * 模块 & 资源加载
 
+* [路由](./Router.md)
+
 * 动画
 
 * canvas & webGL
