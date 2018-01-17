@@ -36,7 +36,7 @@
 
 * 历史记录（history)
 
-* 缓存
+* [缓存](./Cache.md)
 
 * Hybird
 
