@@ -4,6 +4,8 @@
 
 * [兼容性](./Compatibility.md)
 
+* [HTML5](./HTML5.md)
+
 * [布局](./Layout.md)
 
 * [手势 (touch)](./Touch.md)
