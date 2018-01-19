@@ -12,6 +12,10 @@ ___
 
 ![移动端](./img/mobile_comp.png)
 
+### 兼容检测网站
+
+[can i use](http://caniuse.com)
+[Modernizr](https://modernizr.com)
 
 ## 常见问题解决方案
 

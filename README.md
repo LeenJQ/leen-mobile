@@ -65,3 +65,4 @@
   * [美团](http://i.meituan.com/)
   * [网易](http://news.163.com/mobile/)
   * [百度](https://www.baidu.com/)
+  * [泰然城](https://wx.trc.com/homeIndex)
