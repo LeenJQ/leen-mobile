@@ -77,6 +77,19 @@ var dpr = window.devicePixelRatio
 ```
 <a name="view-unit" />
 
+* **视口(viewport)**
+
+默认是 980px， 代表手机可以看到的部分，如果小于默认的 980px，会缩小渲染
+
+可以使用Meta 标签来修改视口属性
+
+* width
+* initial-scale
+* minimum-scale
+* maximum-scale
+* height
+* user-scalable
+
 * **视口单位（ Viewport units )**
 vw, vh, vmin, vmax
 
