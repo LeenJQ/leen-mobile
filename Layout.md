@@ -54,7 +54,7 @@ input {
 }
 ```
 
-### 方案2：dpr 设置缩放比
+### 方案2：页面分成10等份，dpr 设置缩放比
 
 [淘宝方案库: lib-flexible](https://github.com/amfe/lib-flexible/blob/2.0/index.js)
 
